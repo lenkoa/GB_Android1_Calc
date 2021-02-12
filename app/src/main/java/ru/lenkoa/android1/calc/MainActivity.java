@@ -1,5 +1,6 @@
 package ru.lenkoa.android1.calc;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,6 +15,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initView();
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle instanceState) {
+        instanceState.putString(CALC, calc.toString());
+        super.onSaveInstanceState(instanceState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        calc.restoreCalc(savedInstanceState.getString(CALC));
     }
 
     private void initView() {

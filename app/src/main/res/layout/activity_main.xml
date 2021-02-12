@@ -20,6 +20,7 @@
         android:layout_marginTop="@dimen/button_margins"
         android:layout_marginEnd="@dimen/button_margins"
         android:layout_marginBottom="@dimen/text_bottom_margin"
+        android:background="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="@id/guideline" />
 
     <Button
