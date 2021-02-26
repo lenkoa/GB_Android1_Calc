@@ -7,4 +7,5 @@
     <dimen name="button_action_margins">8dp</dimen>
     <dimen name="textArea_text">40sp</dimen>
     <dimen name="text_bottom_margin">18dp</dimen>
+    <item name="constraint_percent" type="dimen" format="float">0.3</item>
 </resources>
