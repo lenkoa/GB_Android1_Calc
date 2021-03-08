@@ -144,4 +144,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline"/>
 
+    <com.google.android.material.button.MaterialButton
+        style="@style/ButtonSettingsStyle"
+        android:id="@+id/button_settings"
+        android:text="@string/_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

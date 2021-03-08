@@ -3,6 +3,7 @@ package ru.lenkoa.android1.calc;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -74,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
         button_plus.setOnClickListener(calc.button_plusClick());
         Button button_backspace = findViewById(R.id.button_backspace);
         button_backspace.setOnClickListener(calc.button_backspaceClick());
+
+        Button button_settings = findViewById(R.id.button_settings);
+        button_settings.setOnClickListener(v -> {
+            Intent runSettings = new Intent(MainActivity.this,
+                    SettingsActivity.class);
+            startActivity(runSettings);
+        });
     }
 
 }
