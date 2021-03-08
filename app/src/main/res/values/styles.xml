@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonThemesStyle" parent="Theme.Calc">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ButtonThemeStyle" parent="ButtonThemesStyle">
+        <item name="android:textSize">@dimen/button_text</item>
+        <item name="android:textColor">#46A5B1</item>
+        <item name="android:layout_marginStart">@dimen/button_style_margins</item>
+        <item name="android:layout_marginTop">@dimen/button_style_margins</item>
+        <item name="android:layout_marginEnd">@dimen/button_style_margins</item>
+        <item name="android:layout_marginBottom">@dimen/button_style_margins</item>
+    </style>
+
+    <style name="ButtonBackStyle" parent="ButtonThemesStyle">
+        <item name="android:textColor">#D6CC6A</item>
+        <item name="android:textSize">@dimen/button_action</item>
+        <item name="android:layout_marginStart">@dimen/button_style_margins</item>
+        <item name="android:layout_marginTop">@dimen/button_style_margins</item>
+        <item name="android:layout_marginEnd">@dimen/button_style_margins</item>
+        <item name="android:layout_marginBottom">@dimen/button_style_margins</item>
+    </style>
+
+    <dimen name="button_style_margins">10dp</dimen>
+</resources>

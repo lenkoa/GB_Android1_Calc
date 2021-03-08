@@ -18,4 +18,7 @@
     <string name="_plus">+</string>
     <string name="_AC">A/C</string>
     <string name="_backspace"><![CDATA[<-]]></string>
+    <string name="_second_theme">Dark Theme</string>
+    <string name="_first_theme">Light Theme</string>
+    <string name="_back">Go Back</string>
 </resources>
