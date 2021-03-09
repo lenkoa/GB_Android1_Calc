@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Themes {
 
     private Calculations calc;
     private final String CALC = "calc";
@@ -33,11 +33,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        // Получить тему приложения
+        initTheme();
+
         // Получить окно с текстом по идентификатору
         calc = new Calculations(findViewById(R.id.textArea));
 
         // Получить кнопки
         initButtonsView();
+    }
+
+    private void initTheme() {
+        getAppTheme(R.style.AppThemeDark);
+    }
+
+    private int getAppTheme(int appTheme) {
+        return appTheme;
     }
 
     private void initButtonsView() {
