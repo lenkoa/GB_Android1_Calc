@@ -13,37 +13,4 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-
-    <style name="ButtonStyle" parent="Theme.Calc">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:textColor">#B19646</item>
-    </style>
-
-    <style name="ButtonTextStyle" parent="ButtonStyle">
-        <item name="android:textSize">@dimen/button_text</item>
-        <item name="android:layout_marginStart">@dimen/button_margins</item>
-        <item name="android:layout_marginTop">@dimen/button_margins</item>
-        <item name="android:layout_marginEnd">@dimen/button_margins</item>
-        <item name="android:layout_marginBottom">@dimen/button_margins</item>
-    </style>
-
-    <style name="ButtonActionStyle" parent="ButtonStyle">
-        <item name="android:textSize">@dimen/button_action</item>
-        <item name="android:layout_marginStart">@dimen/button_action_margins</item>
-        <item name="android:layout_marginTop">@dimen/button_action_margins</item>
-        <item name="android:layout_marginEnd">@dimen/button_action_margins</item>
-        <item name="android:layout_marginBottom">@dimen/button_action_margins</item>
-    </style>
-
-    <style name="ButtonSettingsStyle" parent="Theme.Calc">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textColor">#B19646</item>
-        <item name="android:textSize">@dimen/button_action</item>
-        <item name="android:layout_marginStart">@dimen/button_action_margins</item>
-        <item name="android:layout_marginTop">@dimen/button_action_margins</item>
-        <item name="android:layout_marginEnd">@dimen/button_action_margins</item>
-        <item name="android:layout_marginBottom">@dimen/button_action_margins</item>
-    </style>
 </resources>
